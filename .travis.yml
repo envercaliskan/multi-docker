@@ -11,7 +11,7 @@ script:
 after_success:
   - docker build -t envercaliskan/multi-client ./client
   - docker build -t envercaliskan/multi-nginx ./nginx
-  - docker build -t envercaliskan/multi=server ./server
+  - docker build -t envercaliskan/multi-server ./server
   - docker build -t envercaliskan/multi-worker ./worker
   # Login in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
