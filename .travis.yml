@@ -20,7 +20,6 @@ after_success:
   - docker push envercaliskan/multi-nginx
   - docker push envercaliskan/multi-server
   - docker push envercaliskan/multi-worker
-
 deploy:
   provider: elasticbeanstalk
   region: 'eu-central-1'
